@@ -15,6 +15,17 @@
 - [Rust](https://github.com/moonrepo/plugins/blob/master/tools/rust/CHANGELOG.md)
 - [Schema (TOML, JSON, YAML)](https://github.com/moonrepo/plugins/blob/master/tools/internal-schema/CHANGELOG.md)
 
+## Unreleased
+
+#### 🚀 Updates
+
+- Added Dash shell support.
+
+#### ⚙️ Internal
+
+- Updated quoting/escaping for many shells.
+- Updated dependencies.
+
 ## 0.55.4
 
 #### 🚀 Updates
