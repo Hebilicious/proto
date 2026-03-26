@@ -72,7 +72,7 @@ mod exec {
 
         assert
             .success()
-            .stdout(predicate::str::contains("v20.20.1"));
+            .stdout(predicate::str::contains("v20.20.2"));
     }
 
     #[test]
@@ -99,7 +99,6 @@ bun = "1.2"
                 "bun",
                 "--shell",
                 "bash",
-                "--raw",
                 "--",
                 "node --version && bun --version",
             ]);
@@ -107,7 +106,7 @@ bun = "1.2"
 
         assert
             .inner
-            .stdout(predicate::str::contains("v20.20.1").and(predicate::str::contains("1.2.23")));
+            .stdout(predicate::str::contains("v20.20.2").and(predicate::str::contains("1.2.23")));
     }
 
     #[test]
@@ -133,7 +132,6 @@ bun = "1.2"
                 "--tools-from-config",
                 "--shell",
                 "bash",
-                "--raw",
                 "--",
                 "node --version && bun --version",
             ]);
@@ -141,7 +139,7 @@ bun = "1.2"
 
         assert
             .inner
-            .stdout(predicate::str::contains("v20.20.1").and(predicate::str::contains("1.2.23")));
+            .stdout(predicate::str::contains("v20.20.2").and(predicate::str::contains("1.2.23")));
     }
 
     #[test]
